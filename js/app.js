@@ -1,3 +1,16 @@
+const LoadAllPhones = () => {
+    const url = `https://openapi.programming-hero.com/api/phones?search=a`;
+    fetch(url)
+    .then(res => res.json())
+    .then(data => displayPhones(data.data))
+}
+LoadAllPhones()
+
+
+
+
+
+
 const loadPhones = (searchText, datalimit) => {
     const url = `https://openapi.programming-hero.com/api/phones?search=${searchText}`;
     fetch(url)
