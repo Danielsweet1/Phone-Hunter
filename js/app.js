@@ -7,10 +7,6 @@ const LoadAllPhones = () => {
 LoadAllPhones()
 
 
-
-
-
-
 const loadPhones = (searchText, datalimit) => {
     const url = `https://openapi.programming-hero.com/api/phones?search=${searchText}`;
     fetch(url)
@@ -66,6 +62,7 @@ const processSearch = (datalimit) => {
     const searchField = document.getElementById('search-field')
     const searchText = searchField.value;
     loadPhones(searchText, datalimit);
+
     
 }
 
